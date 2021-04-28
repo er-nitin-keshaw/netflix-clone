@@ -6,15 +6,13 @@ import Nav from "./Nav";
 
 
 function App() {
+  console.log('check develop branch execution ')
   return (
     <div className="App">
 
 
     <Nav />
     <Banner />
-
-
-
     <Row title="Netflix original" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
     <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
     <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
